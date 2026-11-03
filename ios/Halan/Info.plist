@@ -35,7 +35,7 @@
 		<true/>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>نحتاج إلى معرفة موقعك لتحديد أقرب الخدمات والمتاجر إليك.</string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
