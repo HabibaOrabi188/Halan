@@ -1,1 +1,1 @@
-export { default } from './Job DetailsScreen';
+export { default } from './JobDetailsScreen';

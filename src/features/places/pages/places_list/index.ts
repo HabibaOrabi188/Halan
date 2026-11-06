@@ -1,1 +1,1 @@
-export { default } from './Places ListScreen';
+export { default } from './PlacesListScreen';

@@ -1,1 +1,1 @@
-export { default } from './My RequestsScreen';
+export { default } from './MyRequestsScreen';

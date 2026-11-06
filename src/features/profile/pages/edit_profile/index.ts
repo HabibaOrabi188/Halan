@@ -1,1 +1,1 @@
-export { default } from './Edit ProfileScreen';
+export { default } from './EditProfileScreen';

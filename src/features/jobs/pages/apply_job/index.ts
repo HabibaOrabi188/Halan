@@ -1,1 +1,1 @@
-export { default } from './Apply JobScreen';
+export { default } from './ApplyJobScreen';

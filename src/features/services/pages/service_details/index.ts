@@ -1,1 +1,1 @@
-export { default } from './Service DetailsScreen';
+export { default } from './ServiceDetailsScreen';

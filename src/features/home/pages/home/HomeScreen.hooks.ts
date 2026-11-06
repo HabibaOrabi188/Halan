@@ -7,7 +7,7 @@ const useHomeScreen = (): HomeScreenProps => {
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const [locationCoords, setLocationCoords] = useState<LocationCoordinates | null>(null);
   const [isLoadingLocation, setIsLoadingLocation] = useState(false);
-
+  const [userName, setUserName] = useState<string | null>(null);
   const onConfirmLocation = useCallback(async () => {
     try {
       setIsLoadingLocation(true);
@@ -15,6 +15,7 @@ const useHomeScreen = (): HomeScreenProps => {
       setSelectedLocation(result.address);
       setLocationCoords(result.coords);
       setShowLocationDialog(false);
+      setUserName("حبيبة");
     } catch (error) {
       console.warn('Error determining location:', error);
     } finally {
@@ -38,6 +39,7 @@ const useHomeScreen = (): HomeScreenProps => {
     onConfirmLocation,
     onDismissLocation,
     onChangeLocation,
+    userName
   };
 };
 

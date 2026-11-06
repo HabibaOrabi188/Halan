@@ -1,1 +1,1 @@
-export { default } from './Nearby PlacesScreen';
+export { default } from './NearbyPlacesScreen';

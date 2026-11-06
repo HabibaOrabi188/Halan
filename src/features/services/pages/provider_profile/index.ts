@@ -1,1 +1,1 @@
-export { default } from './Provider ProfileScreen';
+export { default } from './ProviderProfileScreen';

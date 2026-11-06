@@ -8,6 +8,7 @@ import { AuthNavigator } from './AuthNavigator';
 import HomeScreen from '../../features/home/pages/home';
 import { colors } from '../../theme';
 import OnboardingScreen from '../../features/splash/pages/splash/onboarding';
+import { BottomTabs } from './BottomTabs';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -33,7 +34,7 @@ export const RootNavigator: React.FC = () => {
       />
       <Stack.Screen
         name="Main"
-        component={HomeScreen as any}
+        component={BottomTabs as any}
         options={{ animation: 'fade' }}
       />
     </Stack.Navigator>

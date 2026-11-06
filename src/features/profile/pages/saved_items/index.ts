@@ -1,1 +1,1 @@
-export { default } from './Saved ItemsScreen';
+export { default } from './SavedItemsScreen';

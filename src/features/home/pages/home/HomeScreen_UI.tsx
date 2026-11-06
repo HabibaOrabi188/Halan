@@ -21,17 +21,24 @@ const HomeScreenUI: React.FC<HomeScreenProps> = ({
   onConfirmLocation,
   onDismissLocation,
   onChangeLocation,
+  userName,
 }) => {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: colors.foreground }}>
+    <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" />
 
       {/* Top Location Bar */}
+      <CustomText
+              title={"مرحبا "+(userName??"")}
+              size={typography.body2}
+              color={colors.textPrimary}
+
+            />
       <TouchableOpacity
         onPress={onChangeLocation}
-        style={uiStyles.locationCard}
+        style={styles.locationCard}
         activeOpacity={0.75}>
-        <View style={uiStyles.locationCardLeft}>
+        <View style={styles.locationCardLeft}>
           <Icon name="map-marker-radius-outline" size={scale(22)} color={colors.primary} />
           <View style={{ flexDirection: 'column', alignItems: 'flex-start' }}>
             <CustomText
@@ -65,28 +72,5 @@ const HomeScreenUI: React.FC<HomeScreenProps> = ({
   );
 };
 
-const uiStyles = StyleSheet.create({
-  locationCard: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginHorizontal: spacing.lg,
-    marginTop: spacing.md,
-    marginBottom: spacing.sm,
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
-    backgroundColor: colors.surface,
-    borderRadius: radii.lg,
-    borderWidth: scale(1),
-    borderColor: colors.border,
-    gap: spacing.sm,
-  },
-  locationCardLeft: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: spacing.sm,
-    flex: 1,
-  },
-});
 
 export default HomeScreenUI;

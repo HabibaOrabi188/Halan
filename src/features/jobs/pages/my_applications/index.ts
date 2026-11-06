@@ -1,1 +1,1 @@
-export { default } from './My ApplicationsScreen';
+export { default } from './MyApplicationsScreen';

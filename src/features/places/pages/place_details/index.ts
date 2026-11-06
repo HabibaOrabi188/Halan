@@ -1,1 +1,1 @@
-export { default } from './Place DetailsScreen';
+export { default } from './PlaceDetailsScreen';

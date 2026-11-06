@@ -8,4 +8,5 @@ export interface HomeScreenProps {
   onConfirmLocation: () => Promise<void> | void;
   onDismissLocation: () => void;
   onChangeLocation: () => void;
+  userName: string | null;
 }

@@ -22,7 +22,7 @@ export const ENDPOINTS = {
     banners: '/home/banners',
   },
   explore: {
-    categories: '/explore/categories',
+    Explore: '/explore/Explore',
     search: '/explore/search',
     filters: '/explore/filters',
   },
